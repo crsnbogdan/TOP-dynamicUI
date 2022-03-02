@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.navlink a {
+    color: black;
+    display: inline-block;
+    width: 100%;
+}
+
+.navigation .navlink,
+.navigation .navlink>a {
+    width: 115px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Desktop Top Navigation */
+
+@media only screen and (min-width: 1024px) {
+    .navigation {
+        padding: 20px 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation img.navlogo {
+        width: 50px;
+    }
+    .navlist {
+        display: flex!important;
+    }
+    img.hamburgeropenbtn,
+    img.hamburgerclosebtn {
+        display: none;
+    }
+    .navlink {
+        width: 70px;
+        text-align: center;
+        padding: 5px 20px;
+    }
+    .navigation .navlist {
+        display: flex;
+        justify-content: center;
+    }
+    .navlist>.navitem {
+        margin: 10px 20px;
+    }
+    .navitem-submenu>ul.submenu {
+        display: none;
+        position: absolute;
+        margin-left: -20px;
+        background-color: white;
+    }
+    .navitem-submenu.navlink img {
+        margin-left: 5px;
+        height: 15px;
+    }
+}
+
+
+/* Mobile Top Navigation */
+
+@media only screen and (max-width: 1024px) {
+    .navigation {
+        width: 100vw;
+        padding: 20px 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation img.navlogo {
+        width: 70px;
+        margin-left: 50px;
+    }
+    .navigation img.hamburgeropenbtn {
+        float: right;
+        width: 40px;
+        margin-right: 40px;
+    }
+    .navlist {
+        box-sizing: border-box;
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0vw;
+        height: 100vh!important;
+        width: 50vw;
+        background-color: white;
+        padding: 50px;
+    }
+    img.dropdown-icon {
+        height: 30px;
+    }
+    .navlink {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+    .submenu {
+        display: none;
+    }
+    .navitem-submenu>a {
+        display: flex;
+    }
+    .submenu-item.navlink {
+        margin-left: 30px;
+    }
+    .hamburgeropenbtn {
+        height: 25px;
+        width: 25px;
+    }
+    .hamburgerclosebtn {
+        height: 25px;
+        float: right;
+        align-self: flex-start;
+        margin-bottom: 50px;
+    }
+}
