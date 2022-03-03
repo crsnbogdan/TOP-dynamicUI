@@ -1,38 +1,33 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const isProduction = process.env.NODE_ENV == 'production';
-
-
-const config = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        clean: true,
+module.exports = {
+    mode: 'development',
+    entry: {
+        index: './src/index.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
-        })
+            title: 'UI Development',
+            template: 'src/index.html',
+            children: true,
+        }),
     ],
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
+    },
     module: {
         rules: [{
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-            },
-            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ],
     },
-};
 
-module.exports = () => {
-    if (isProduction) {
-        config.mode = 'production';
-    } else {
-        config.mode = 'development';
-    }
-    return config;
 };

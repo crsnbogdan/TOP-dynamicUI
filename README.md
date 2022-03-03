@@ -1,6 +1,6 @@
 TITLE: Dynamic User Interface
 
-VERSION NUMBER: 1.0.1
+VERSION NUMBER: 1.0.2
 
 DESCRIPTION:  Project created for the purpose of creating a reusable and responsive navigation bar and slider.
 
