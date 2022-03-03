@@ -1,6 +1,6 @@
 TITLE: Dynamic User Interface
 
-VERSION NUMBER: 1.0.0
+VERSION NUMBER: 1.0.1
 
 DESCRIPTION:  Project created for the purpose of creating a reusable and responsive navigation bar and slider.
 
@@ -8,8 +8,8 @@ PROJECT STATUS: In Progres
 
 TO DO: 
 - implement slider
-    - implement slider change logic
-    - create functions to go to the next and previous slide
+    - create functions to go to the next and previous slide and link them to 
+    DOM elements
     - make slider responsive
 
 TECHNOLOGIES USED: HTML, CSS, JS, NPM, Webpack, ESLint, NPM Prettier Module

@@ -6,6 +6,7 @@
 
 body {
     background-color: aliceblue;
+    max-width: 100vw;
 }
 
 .navlink a {
@@ -21,8 +22,12 @@ body {
     list-style: none;
 }
 
+.navigation {
+    width: 100vw;
+}
 
-/* Desktop Top Navigation */
+
+/*Desktop Top Navigation*/
 
 @media only screen and (min-width: 1024px) {
     .navigation {
@@ -66,7 +71,7 @@ body {
 }
 
 
-/* Mobile Top Navigation */
+/* Mobile Top Navigation*/
 
 @media only screen and (max-width: 1024px) {
     .navigation {
@@ -123,4 +128,42 @@ body {
         align-self: flex-start;
         margin-bottom: 50px;
     }
+}
+
+
+/*Desktop Slider*/
+
+.slider-container {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+div.slide {
+    margin-left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 200%;
+    background-position: center;
+    z-index: 0;
+    transition-duration: 1000ms;
+}
+
+.slide-one {
+    background-image: url(./slideimg1.jpg);
+}
+
+.slide-two {
+    background-image: url(./slideimg2.jpg);
+}
+
+.slide-three {
+    background-image: url(./slideimg3.jpg);
+}
+
+.slide-four {
+    background-image: url(./slideimg4.jpg);
 }
