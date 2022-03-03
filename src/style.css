@@ -137,7 +137,6 @@ body {
     position: relative;
     height: 80vh;
     width: 100%;
-    background-color: red;
     overflow: hidden;
 }
 
@@ -166,4 +165,27 @@ div.slide {
 
 .slide-four {
     background-image: url(./slideimg4.jpg);
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+div.sliderbuttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.sliderbuttons button {
+    border: none;
+    background-color: transparent;
+}
+
+.sliderarrow {
+    height: 50px;
+    margin: 25px;
+    filter: invert(1);
 }
