@@ -147,8 +147,8 @@ div.slide {
     width: 100%;
     background-size: 100% 200%;
     background-position: center;
-    z-index: 0;
-    transition-duration: 1000ms;
+    z-index: 1;
+    transition-duration: 500ms;
 }
 
 .slide-one {
@@ -184,8 +184,27 @@ div.sliderbuttons {
     background-color: transparent;
 }
 
+.sliderbuttons button:focus {
+    outline: none;
+}
+
 .sliderarrow {
     height: 50px;
     margin: 25px;
     filter: invert(1);
 }
+
+
+/*
+.slide.previous {
+    z-index: 2;
+}
+
+.slide.current {
+    z-index: 4;
+}
+
+.slide.next {
+    z-index: 3;
+}
+*/
